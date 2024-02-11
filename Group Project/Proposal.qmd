@@ -24,9 +24,9 @@ The purpose of this paper is to provide a transparent and reliable reference of 
 
 # **4.0 The Data Preparation** 
 
-1.  [**Renting Out of Flats (ROF)2023:**](https://beta.data.gov.sg/collections/166/view)
+1.  [**Residential Rental:**](https://app.netlify.com/sites/vaa-groupproject-g16/overview)
 
-    *This rental data is based on the declaration by the flat owner. HDB does not verify the accuracy of the data. Also this data includes room rent and house rent. In this essay, we only analysis the house rent. (for room rent, the data is not enough.)*
+    *This rental data is based on the Government platform and it includes house monthly rent and the No of bedroom form almost Non-landed Properties from 2019 to 2023 . In this essay, we only analysis the house rent.*
 
 2.  [**Indicators On Population(IOP)** :](https://tablebuilder.singstat.gov.sg/table/TS/M810001)
 
@@ -58,9 +58,9 @@ The purpose of this paper is to provide a transparent and reliable reference of 
 
 *Figure 1: Data wrangling*
 
-Renting Out of Flats, the data includes the room rent price and house rent price. we will use the median price to delete the low 25% price make the data more accuracy. we will use box and point to interpret the data, mostly we will use the median price group by the area and room, delete the 25% lower rent price.
+Renting Out of Flats, the data includes the room rent price and house rent price. In addition, we will use box and point to interpret the data, mostly we will use the median price group by the area and room.
 
-For the other data, we will use them to compute the correlation with renting price by ANOVA test. We will also use the turkey test to build the most relevant model.
+For the other data, we will use them to compute the correlation with renting price by LM Model. We will also use the turkey test to build the most relevant model.
 
 #### 
 
@@ -70,7 +70,7 @@ For the other data, we will use them to compute the correlation with renting pri
 
 ***PAST:***
 
-For the rent price data, almost from 2021, we want to know what happened in the past year. By using the interactive visualisation, we want to see the trend during and after the pandemic period. We also divide into 1 room, 2 rooms, 3 rooms, 4 rooms, 5 rooms in different area such as ANG MO KIO.
+For the rent price data, from 2019 to 2023, we want to understand what happened in the past year. By using the interactive visualisation, we want to see the trend during and after the pandemic period. We also divide into 1 room, 2 rooms, 3 rooms, 4 rooms, 5 rooms in different area such as ANG MO KIO.
 
 ***PREESENT:***
 
@@ -154,7 +154,7 @@ By applying qualitative and quantitative methods to in-depth market observations
 
 | Data                                                                     | Sourse                                                                                                                       |
 |---------------------------|---------------------------------------------|
-| Renting Out of Flats (ROF)2023                                           | <https://beta.data.gov.sg/collections/166/view>                                                                              |
+| Residential Rental                                                       | <https://www.ura.gov.sg/property-market-information/pmiResidentialRentalSearch>                                              |
 | Indicators On Population(IOP)                                            | <https://tablebuilder.singstat.gov.sg/table/TS/M810001>                                                                      |
 | Resident Households By Household Size (RHH)                              | [[https://tablebuilder.singstat.gov.sg/table/TS/M810371]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M810371) |
 | Number of Applications Registered for Resale and Rental Flats (NARR)     | [[https://beta.data.gov.sg/collections/159/view]{.underline}](https://beta.data.gov.sg/collections/159/view)                 |
