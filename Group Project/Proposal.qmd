@@ -1,17 +1,28 @@
 ---
 title: "Proposal"
-author: "Xu Lin & Shao Guyue"
+author: Xu Lin Shao Guyue
+date: "Feb 11, 2024"
+date-modified: "last-modified"
+execute: 
+  eval: true
+  echo: true
+  warning: false
+editor: visual
 ---
 
 # **1.0 Background**
 
-In recent years, Singapore has become one of the top choices for many Asian overseas workers and international students after the pandemic, an increasing number of people have been moving to Singapore. Moreover, frequent relocations among foreign workers and students, coupled with a market saturated with intermediaries whose pricing is not transparent, have made finding satisfactory accommodation at a reasonable price an inevitable challenge for many international students and foreign workers
+In the wake of the pandemic, Singapore has rapidly emerged as a popular tourist destination and fintech hub, attracting many foreign students and staff. For them, renting became the first challenge they faced after arriving in Singapore. Unlike other countries, the rental market in Singapore is dominated by landlords and agents, who usually give priority to the interests of landlords and strive to obtain more profits for landlords. Although the Singapore government has achieved relative transparency in housing policy, new arrivals may still rely too much on the information of landlords and agents and lose their judgment of reasonable rent because they are not familiar with the unique rental system and regulations in Singapore. In addition, most people do not know how to use the resources and platforms provided by the government to obtain information.
 
-# 2.0 Motivation & Proposal
+# 2.0 Motivation 
 
-In the past few years, as I personally experienced the process of moving four times, I am deeply aware of the problems existing in the rental market, especially the lack of market transparency and the lack of protection of tenants' rights and interests. These experiences have led me to think about how we can fundamentally improve the rental market and provide a fairer and more transparent environment for tenants.
+As a foreign student, I went through four moves in just one year, each for different reasons. In a competitive rental market like Singapore, finding a fair and reasonable price can be a challenge for landlords and an even more daunting task for tenants. Especially in the face of multiple potential tenants competing for the same property, how to ensure that you make an offer that is fair to both parties becomes a matter of careful consideration.
 
-# **3.0 The Data**
+# 3.0 Proposal
+
+The purpose of this paper is to provide a transparent and reliable reference of rental prices for consumers, especially foreign students or staff like me. By analyzing and sharing real-time market data, we hope to deeply explore the various factors affecting rent pricing, including geographical location, housing type, etc., to help tenants rent satisfactory houses at the most reasonable prices, and improve the transaction efficiency between landlords and tenants.
+
+# **4.0 The Data Preparation** 
 
 1.  [**Renting Out of Flats (ROF)2023:**](https://beta.data.gov.sg/collections/166/view)
 
@@ -23,7 +34,7 @@ In the past few years, as I personally experienced the process of moving four ti
 
 3.  [**Resident Households By Household Size (RHH)** :](https://tablebuilder.singstat.gov.sg/table/TS/M810371)
 
-    *This data helps us to know how many residents own a house. These person who do not need to rent a house. We will use in the ANOVA test.*
+    *This data helps us to know how many residents own a house. These person who do not need to rent a house. We will use in the Linear Regression.*
 
 4.  [**Number of Applications Registered for Resale and Rental Flats (NARR)** :](https://beta.data.gov.sg/collections/159/view)
 
@@ -35,27 +46,27 @@ In the past few years, as I personally experienced the process of moving four ti
 
 6.  [**Expenditure On Gross Domestic Product Deflators (2015 = 100) (EOGDPD)** :](https://tablebuilder.singstat.gov.sg/table/TS/M015111)
 
-    *Aggregate value of the goods and services produced in the economic territory of Singapore. We will use this data in ANOVA test.*
+    *Aggregate value of the goods and services produced in the economic territory of Singapore. We will use this data in Linear Regression.*
 
 7.  [**Average Monthly Nominal Earnings Per Employee (AMNE)** :](https://tablebuilder.singstat.gov.sg/table/TS/M182931)
 
-    *Average (mean) monthly earnings refer to all remuneration received before deduction of the employee Central Provident Fund (CPF) contributions and personal income tax. It comprises basic wages, overtime pay, commissions, allowances and bonuses but exclude employer CPF contributions. This data will be used in ANOVA test.*
-
-![](figure/data%20wrangling.png){fig-align="center" width="683"}
+    *Average (mean) monthly earnings refer to all remuneration received before deduction of the employee Central Provident Fund (CPF) contributions and personal income tax. It comprises basic wages, overtime pay, commissions, allowances and bonuses but exclude employer CPF contributions. This data will be used in Linear Regression.*
 
 **Data wrangling：**
 
+![](figure/data%20wrangling.png){fig-align="center" width="683"}
+
 *Figure 1: Data wrangling*
 
-Renting Out of Flats, the data include the room rent price and house rent price. we will use the median price to delete the low 25% price make the data more accuracy. we will use box and point to watch the data, mostly we will use the median price group by the area and room, delete the 25% lower rent price.
+Renting Out of Flats, the data includes the room rent price and house rent price. we will use the median price to delete the low 25% price make the data more accuracy. we will use box and point to interpret the data, mostly we will use the median price group by the area and room, delete the 25% lower rent price.
 
 For the other data, we will use them to compute the correlation with renting price by ANOVA test. We will also use the turkey test to build the most relevant model.
 
 #### 
 
-# 4.0 Methodology：
+# 5.0 Methodology：
 
-## 4.1 The display of the past, present and future:
+### 5.1 The display of the past, present and future:
 
 ***PAST:***
 
@@ -67,9 +78,9 @@ The present price is the most important part. We will use different kinds of c
 
 ***FUTURE:***
 
-We will use 2 methods to predict the price in the future. One is the regression to mean, by using CI 95%, this will help us to see the trend in the future. The other is ARIMA model, this model can predict the recent price.
+we will use the regoression modle to help us to see the trend in the future. One is the regression to mean, by using CI 95%, this will help us to see the trend in the future. The other is LM Model, this model can predict the recent price.
 
-## 4.2 Visualization Interactive：
+### 5.2 Visualization Interactive：
 
 [**1. Line chart: show trends and changes between data points through the time**]{.underline}
 
@@ -89,27 +100,23 @@ We will use 2 methods to predict the price in the future. One is the regression 
 
 1\> Raw data in rent price (outliers)
 
-[**5. Points and violin plot:**]{.underline}
-
-1\> One way ANOVA test
-
-[**6. Standard error bars plot**]{.underline}
+[**5. Standard error bars plot**]{.underline}
 
 1\> Rent price in Singapore (total)
 
-[**7. Arallel Plot: visualize multidimensional datasets on a two-dimensional plane**]{.underline}
+[**6. Arallel Plot: visualize multidimensional datasets on a two-dimensional plane**]{.underline}
 
-1\> Population & Economic Data
+1\> Population & Economic Data (The Economic Data is the remaining 6 data except for the rent price)
 
-[**8. Tree map: display hierarchical data structures within a limited space, utilizing the size and color of rectangles to represent dimensions of the data**]{.underline}
+[**7. Tree map: display hierarchical data structures within a limited space, utilizing the size and color of rectangles to represent dimensions of the data**]{.underline}
 
 1\> Present rent price in different area
 
-[**9. Mapping SG**]{.underline}
+[**8. Mapping SG**]{.underline}
 
 1\> Rent price present  and future in SG
 
-## **4.3 Mathematics  Function:**
+### **5.3 Mathematics  Function:**
 
 **1.Linear Regression model**
 
@@ -129,11 +136,11 @@ Find out the most suitable R2 and model.
 
 ARIMA Model (AutoRegressive Integrated Moving Average Model) to predict the house rent price.
 
-# **5.0 Conclusion**
+# **6.0 Conclusion**
 
 By applying qualitative and quantitative methods to in-depth market observations, and using cross-validation techniques to check the consistency and reliability of forecast results, we can increase the transparency of the rental market. This approach not only provides a reasonable price range in the current rental market (including all types of rooms), but also helps each person to find the best living option for them based on their unique needs and circumstances. By doing so, we are able to better understand market dynamics, identify price trends, and ensure renters are fully informed when making decisions. In addition, this increased transparency will also help promote fair competition in the market, prevent price manipulation, and provide a more just and efficient market environment for renters. Ultimately, this will lead to a healthier and more active rental market in which renters are able to rent satisfactory homes at reasonable prices, while landlords are able to get a fair return on their properties.
 
-# **6.0 Limitation:**
+# **7.0 Limitation:**
 
 1\. The rental data comes from the landlord, so it may not be timely. The time is also from 2021, and the time is short
 
@@ -141,12 +148,12 @@ By applying qualitative and quantitative methods to in-depth market observations
 
 3\. As part of prediction, the model is limited in use and is not cross-verified
 
-# 7.0 Reference & Data Sourse
+# 8.0 Reference & Data Sourse
 
 「1」Robbins, N. B. (2008, January). Introduction to Cycle Plots. Visual Business Intelligence Newsletter.
 
 | Data                                                                     | Sourse                                                                                                                       |
-|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+|---------------------------|---------------------------------------------|
 | Renting Out of Flats (ROF)2023                                           | <https://beta.data.gov.sg/collections/166/view>                                                                              |
 | Indicators On Population(IOP)                                            | <https://tablebuilder.singstat.gov.sg/table/TS/M810001>                                                                      |
 | Resident Households By Household Size (RHH)                              | [[https://tablebuilder.singstat.gov.sg/table/TS/M810371]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M810371) |

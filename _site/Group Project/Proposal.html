@@ -6,7 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Xu Lin &amp; Shao Guyue">
+<meta name="author" content="Xu Lin Shao Guyue">
+<meta name="dcterms.date" content="2024-02-11">
 
 <title>Singapore’s rental market - Proposal</title>
 <style>
@@ -112,17 +113,18 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background"><strong>1.0 Background</strong></a></li>
-  <li><a href="#motivation-proposal" id="toc-motivation-proposal" class="nav-link" data-scroll-target="#motivation-proposal">2.0 Motivation &amp; Proposal</a></li>
-  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data"><strong>3.0 The Data</strong></a></li>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">4.0 Methodology：</a>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">2.0 Motivation</a></li>
+  <li><a href="#proposal" id="toc-proposal" class="nav-link" data-scroll-target="#proposal">3.0 Proposal</a></li>
+  <li><a href="#the-data-preparation" id="toc-the-data-preparation" class="nav-link" data-scroll-target="#the-data-preparation"><strong>4.0 The Data Preparation</strong></a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">5.0 Methodology：</a>
   <ul class="collapse">
-  <li><a href="#the-display-of-the-past-present-and-future" id="toc-the-display-of-the-past-present-and-future" class="nav-link" data-scroll-target="#the-display-of-the-past-present-and-future">4.1 The display of the past, present and future:</a></li>
-  <li><a href="#visualization-interactive" id="toc-visualization-interactive" class="nav-link" data-scroll-target="#visualization-interactive">4.2 Visualization Interactive：</a></li>
-  <li><a href="#mathematics-function" id="toc-mathematics-function" class="nav-link" data-scroll-target="#mathematics-function"><strong>4.3 Mathematics &nbsp;Function:</strong></a></li>
+  <li><a href="#the-display-of-the-past-present-and-future" id="toc-the-display-of-the-past-present-and-future" class="nav-link" data-scroll-target="#the-display-of-the-past-present-and-future">5.1 The display of the past, present and future:</a></li>
+  <li><a href="#visualization-interactive" id="toc-visualization-interactive" class="nav-link" data-scroll-target="#visualization-interactive">5.2 Visualization Interactive：</a></li>
+  <li><a href="#mathematics-function" id="toc-mathematics-function" class="nav-link" data-scroll-target="#mathematics-function"><strong>5.3 Mathematics &nbsp;Function:</strong></a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><strong>5.0 Conclusion</strong></a></li>
-  <li><a href="#limitation" id="toc-limitation" class="nav-link" data-scroll-target="#limitation"><strong>6.0 Limitation:</strong></a></li>
-  <li><a href="#reference-data-sourse" id="toc-reference-data-sourse" class="nav-link" data-scroll-target="#reference-data-sourse">7.0 Reference &amp; Data Sourse</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><strong>6.0 Conclusion</strong></a></li>
+  <li><a href="#limitation" id="toc-limitation" class="nav-link" data-scroll-target="#limitation"><strong>7.0 Limitation:</strong></a></li>
+  <li><a href="#reference-data-sourse" id="toc-reference-data-sourse" class="nav-link" data-scroll-target="#reference-data-sourse">8.0 Reference &amp; Data Sourse</a></li>
   </ul>
 </nav>
     </div>
@@ -141,11 +143,23 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Xu Lin &amp; Shao Guyue </p>
+             <p>Xu Lin Shao Guyue </p>
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 11, 2024</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">February 11, 2024</p>
+    </div>
+  </div>
     
   </div>
   
@@ -154,56 +168,60 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="background" class="level1">
 <h1><strong>1.0 Background</strong></h1>
-<p>In recent years, Singapore has become one of the top choices for many Asian overseas workers and international students after the pandemic, an increasing number of people have been moving to Singapore. Moreover, frequent relocations among foreign workers and students, coupled with a market saturated with intermediaries whose pricing is not transparent, have made finding satisfactory accommodation at a reasonable price an inevitable challenge for many international students and foreign workers</p>
+<p>In the wake of the pandemic, Singapore has rapidly emerged as a popular tourist destination and fintech hub, attracting many foreign students and staff. For them, renting became the first challenge they faced after arriving in Singapore. Unlike other countries, the rental market in Singapore is dominated by landlords and agents, who usually give priority to the interests of landlords and strive to obtain more profits for landlords. Although the Singapore government has achieved relative transparency in housing policy, new arrivals may still rely too much on the information of landlords and agents and lose their judgment of reasonable rent because they are not familiar with the unique rental system and regulations in Singapore. In addition, most people do not know how to use the resources and platforms provided by the government to obtain information.</p>
 </section>
-<section id="motivation-proposal" class="level1">
-<h1>2.0 Motivation &amp; Proposal</h1>
-<p>In the past few years, as I personally experienced the process of moving four times, I am deeply aware of the problems existing in the rental market, especially the lack of market transparency and the lack of protection of tenants’ rights and interests. These experiences have led me to think about how we can fundamentally improve the rental market and provide a fairer and more transparent environment for tenants.</p>
+<section id="motivation" class="level1">
+<h1>2.0 Motivation</h1>
+<p>As a foreign student, I went through four moves in just one year, each for different reasons. In a competitive rental market like Singapore, finding a fair and reasonable price can be a challenge for landlords and an even more daunting task for tenants. Especially in the face of multiple potential tenants competing for the same property, how to ensure that you make an offer that is fair to both parties becomes a matter of careful consideration.</p>
 </section>
-<section id="the-data" class="level1">
-<h1><strong>3.0 The Data</strong></h1>
+<section id="proposal" class="level1">
+<h1>3.0 Proposal</h1>
+<p>The purpose of this paper is to provide a transparent and reliable reference of rental prices for consumers, especially foreign students or staff like me. By analyzing and sharing real-time market data, we hope to deeply explore the various factors affecting rent pricing, including geographical location, housing type, etc., to help tenants rent satisfactory houses at the most reasonable prices, and improve the transaction efficiency between landlords and tenants.</p>
+</section>
+<section id="the-data-preparation" class="level1">
+<h1><strong>4.0 The Data Preparation</strong></h1>
 <ol type="1">
 <li><p><a href="https://beta.data.gov.sg/collections/166/view"><strong>Renting Out of Flats (ROF)2023:</strong></a></p>
 <p><em>This&nbsp;rental data is based on the declaration by the flat owner. HDB does not verify the accuracy of the data. Also this data includes room rent and house rent. In this essay, we only analysis the house rent. (for room rent, the data is not enough.)</em></p></li>
 <li><p><a href="https://tablebuilder.singstat.gov.sg/table/TS/M810001"><strong>Indicators On Population(IOP)</strong> :</a></p>
 <p><em>This data include: Total Population, Resident Population, Singapore Citizen Population, Permanent Resident Population, Non-Resident Population, Total Population Growth. From this data we want to find out changes in population size.</em></p></li>
 <li><p><a href="https://tablebuilder.singstat.gov.sg/table/TS/M810371"><strong>Resident Households By Household Size (RHH)</strong> :</a></p>
-<p><em>This&nbsp;data&nbsp;helps us to know how many residents own a house. These person who do not need to rent a house. We will use in the ANOVA test.</em></p></li>
+<p><em>This&nbsp;data&nbsp;helps us to know how many residents own a house. These person who do not need to rent a house. We will use in the Linear Regression.</em></p></li>
 <li><p><a href="https://beta.data.gov.sg/collections/159/view"><strong>Number of Applications Registered for Resale and Rental Flats (NARR)</strong> :</a></p>
 <p><em>This&nbsp;data&nbsp;helps us to know how many HDB house supply in the open market.</em></p></li>
 <li><p><a href="https://tablebuilder.singstat.gov.sg/table/TS/M212161"><strong>Housing And Development Board Resale Price Index (1Q2009 = 100)&nbsp;(HDBRPI)</strong></a></p>
 <p><em>The index is based on quarterly average resale price by date of registration. This data we will use in LM model .</em></p></li>
 <li><p><a href="https://tablebuilder.singstat.gov.sg/table/TS/M015111"><strong>Expenditure On Gross Domestic Product Deflators (2015 = 100) (EOGDPD)</strong> :</a></p>
-<p><em>Aggregate value of the goods and services produced in the economic territory of Singapore. We will use this data in ANOVA test.</em></p></li>
+<p><em>Aggregate value of the goods and services produced in the economic territory of Singapore. We will use this data in Linear Regression.</em></p></li>
 <li><p><a href="https://tablebuilder.singstat.gov.sg/table/TS/M182931"><strong>Average Monthly Nominal Earnings Per Employee (AMNE)</strong> :</a></p>
-<p><em>Average (mean) monthly earnings refer to all remuneration received before deduction of the employee Central Provident Fund (CPF) contributions and personal income tax. It comprises basic wages, overtime pay, commissions, allowances and bonuses but exclude employer CPF contributions. This&nbsp;data&nbsp;will be used in ANOVA test.</em></p></li>
+<p><em>Average (mean) monthly earnings refer to all remuneration received before deduction of the employee Central Provident Fund (CPF) contributions and personal income tax. It comprises basic wages, overtime pay, commissions, allowances and bonuses but exclude employer CPF contributions. This&nbsp;data&nbsp;will be used in Linear Regression.</em></p></li>
 </ol>
+<p><strong>Data wrangling：</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figure/data wrangling.png" class="img-fluid figure-img" width="683"></p>
 </figure>
 </div>
-<p><strong>Data wrangling：</strong></p>
 <p><em>Figure 1: Data wrangling</em></p>
-<p>Renting Out of Flats, the data include the room rent price and house rent price. we will use the median price to delete the low 25% price make the data more accuracy. we will use box and point to watch the data, mostly we will use the median price group by the area and room, delete the 25% lower rent price.</p>
+<p>Renting Out of Flats, the data includes the room rent price and house rent price. we will use the median price to delete the low 25% price make the data more accuracy. we will use box and point to interpret the data, mostly we will use the median price group by the area and room, delete the 25% lower rent price.</p>
 <p>For the other data, we will use them to compute the correlation with renting price by ANOVA test. We will also use the turkey test to build the most relevant model.</p>
 <section id="section" class="level4">
 <h4 class="anchored" data-anchor-id="section"></h4>
 </section>
 </section>
 <section id="methodology" class="level1">
-<h1>4.0 Methodology：</h1>
-<section id="the-display-of-the-past-present-and-future" class="level2">
-<h2 class="anchored" data-anchor-id="the-display-of-the-past-present-and-future">4.1 The display of the past, present and future:</h2>
+<h1>5.0 Methodology：</h1>
+<section id="the-display-of-the-past-present-and-future" class="level3">
+<h3 class="anchored" data-anchor-id="the-display-of-the-past-present-and-future">5.1 The display of the past, present and future:</h3>
 <p><strong><em>PAST:</em></strong></p>
 <p>For the rent price data, almost from 2021, we want to know what happened in the past year. By using the interactive visualisation, we want to see the trend during and after the pandemic period. We also divide into 1 room, 2 rooms, 3 rooms, 4 rooms, 5 rooms in different area such as ANG MO KIO.</p>
 <p><strong><em>PREESENT:</em></strong></p>
 <p>The present price&nbsp;is&nbsp;the most important part. We will use different kinds of charts to display the price by different rooms in different area.</p>
 <p><strong><em>FUTURE:</em></strong></p>
-<p>We will use 2 methods to predict the price in the future. One is the regression to mean, by using CI 95%, this will help us to see the trend in the future. The other is ARIMA model, this model can predict the recent price.</p>
+<p>we will use the regoression modle to help us to see the trend in the future. One is the regression to mean, by using CI 95%, this will help us to see the trend in the future. The other is LM Model, this model can predict the recent price.</p>
 </section>
-<section id="visualization-interactive" class="level2">
-<h2 class="anchored" data-anchor-id="visualization-interactive">4.2 Visualization Interactive：</h2>
+<section id="visualization-interactive" class="level3">
+<h3 class="anchored" data-anchor-id="visualization-interactive">5.2 Visualization Interactive：</h3>
 <p><u><strong>1. Line chart: show trends and changes between data points through the time</strong></u></p>
 <p>1&gt; Rent price trend &nbsp;</p>
 <p>2&gt; Population &amp; Economic Data (6 other data)</p>
@@ -213,19 +231,17 @@ ul.task-list li input[type="checkbox"] {
 <p>1&gt; Rent&nbsp;price in different area</p>
 <p><u><strong>4. Box and Points&nbsp;plot：display the distribution of a dataset, particularly the median, quartiles, and outliers</strong></u></p>
 <p>1&gt; Raw data in rent price (outliers)</p>
-<p><u><strong>5. Points and violin plot:</strong></u></p>
-<p>1&gt; One way ANOVA test</p>
-<p><u><strong>6. Standard error bars plot</strong></u></p>
+<p><u><strong>5. Standard error bars plot</strong></u></p>
 <p>1&gt; Rent price in Singapore (total)</p>
-<p><u><strong>7. Arallel Plot: visualize multidimensional datasets on a two-dimensional plane</strong></u></p>
-<p>1&gt; Population &amp; Economic Data</p>
-<p><u><strong>8. Tree map: display hierarchical data structures within a limited space, utilizing the size and color of rectangles to represent dimensions of the data</strong></u></p>
+<p><u><strong>6. Arallel Plot: visualize multidimensional datasets on a two-dimensional plane</strong></u></p>
+<p>1&gt; Population &amp; Economic Data (The Economic Data is the remaining 6 data except for the rent price)</p>
+<p><u><strong>7. Tree map: display hierarchical data structures within a limited space, utilizing the size and color of rectangles to represent dimensions of the data</strong></u></p>
 <p>1&gt; Present rent price in different area</p>
-<p><u><strong>9. Mapping SG</strong></u></p>
+<p><u><strong>8. Mapping SG</strong></u></p>
 <p>1&gt; Rent price present &nbsp;and future in SG</p>
 </section>
-<section id="mathematics-function" class="level2">
-<h2 class="anchored" data-anchor-id="mathematics-function"><strong>4.3 Mathematics &nbsp;Function:</strong></h2>
+<section id="mathematics-function" class="level3">
+<h3 class="anchored" data-anchor-id="mathematics-function"><strong>5.3 Mathematics &nbsp;Function:</strong></h3>
 <p><strong>1.Linear&nbsp;Regression model</strong></p>
 <p>Rent price= β0​ + β1(IOP) + β2(RHH) + β3(NARR) + β4(HDBRPI) + β5(EOGDPD) + β6(AMNE) +ϵ</p>
 <p>1&gt; Regression Coefficients</p>
@@ -238,17 +254,17 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="conclusion" class="level1">
-<h1><strong>5.0 Conclusion</strong></h1>
+<h1><strong>6.0 Conclusion</strong></h1>
 <p>By applying qualitative and quantitative methods to in-depth market observations, and using cross-validation techniques to check the consistency and reliability of forecast results, we can increase the transparency of the rental market. This approach not only provides a reasonable price range in the current rental market (including all types of rooms), but also helps each person to find the best living option for them based on their unique needs and circumstances. By doing so, we are able to better understand market dynamics, identify price trends, and ensure renters are fully informed when making decisions. In addition, this increased transparency will also help promote fair competition in the market, prevent price manipulation, and provide a more just and efficient market environment for renters. Ultimately, this will lead to a healthier and more active rental market in which renters are able to rent satisfactory homes at reasonable prices, while landlords are able to get a fair return on their properties.</p>
 </section>
 <section id="limitation" class="level1">
-<h1><strong>6.0 Limitation:</strong></h1>
+<h1><strong>7.0 Limitation:</strong></h1>
 <p>1. The rental data comes from the landlord, so it may not be timely. The time is also from 2021, and the time is short</p>
 <p>2, considering that our data is pandemic period, may not be completely correct</p>
 <p>3. As part of prediction, the model is limited in use and is not cross-verified</p>
 </section>
 <section id="reference-data-sourse" class="level1">
-<h1>7.0 Reference &amp; Data Sourse</h1>
+<h1>8.0 Reference &amp; Data Sourse</h1>
 <p>「1」Robbins, N. B. (2008, January). Introduction to Cycle Plots. Visual Business Intelligence Newsletter.</p>
 <table class="table">
 <thead>
