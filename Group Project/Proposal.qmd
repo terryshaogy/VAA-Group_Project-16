@@ -41,7 +41,7 @@ In the past few years, as I personally experienced the process of moving four ti
 
     *Average (mean) monthly earnings refer to all remuneration received before deduction of the employee Central Provident Fund (CPF) contributions and personal income tax. It comprises basic wages, overtime pay, commissions, allowances and bonuses but exclude employer CPF contributions. This data will be used in ANOVA test.*
 
-![](figure/data wrangling.png){fig-align="center" width="683"}
+![](figure/data%20wrangling.png){fig-align="center" width="683"}
 
 **Data wrangling：**
 
@@ -145,15 +145,15 @@ By applying qualitative and quantitative methods to in-depth market observations
 
 「1」Robbins, N. B. (2008, January). Introduction to Cycle Plots. Visual Business Intelligence Newsletter.
 
-| Data                                                                      | Sourse                                                                                                                       |
-|---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Renting Out of Flats (ROF)2023                                            | <https://beta.data.gov.sg/collections/166/view>                                                                              |
-| Indicators On Population(IOP)                                             | <https://tablebuilder.singstat.gov.sg/table/TS/M810001>                                                                      |
-| Resident Households By Household Size (RHH)                               | [[https://tablebuilder.singstat.gov.sg/table/TS/M810371]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M810371) |
-| Number of Applications Registered for Resale and Rental Flats (NARR)      | [[https://beta.data.gov.sg/collections/159/view]{.underline}](https://beta.data.gov.sg/collections/159/view)                 |
-| Housing And Development Board Resale Price Index (1Q2009 = 100) (HDBRPI)  | <https://tablebuilder.singstat.gov.sg/table/TS/M212161>                                                                      |
-| Expenditure On Gross Domestic Product Deflators (2015 = 100) (EOGDPD)     | [[https://tablebuilder.singstat.gov.sg/table/TS/M015111]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M015111) |
-| Average Monthly Nominal Earnings Per Employee (AMNE)                      | [[https://tablebuilder.singstat.gov.sg/table/TS/M182931]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M182931) |
+| Data                                                                     | Sourse                                                                                                                       |
+|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| Renting Out of Flats (ROF)2023                                           | <https://beta.data.gov.sg/collections/166/view>                                                                              |
+| Indicators On Population(IOP)                                            | <https://tablebuilder.singstat.gov.sg/table/TS/M810001>                                                                      |
+| Resident Households By Household Size (RHH)                              | [[https://tablebuilder.singstat.gov.sg/table/TS/M810371]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M810371) |
+| Number of Applications Registered for Resale and Rental Flats (NARR)     | [[https://beta.data.gov.sg/collections/159/view]{.underline}](https://beta.data.gov.sg/collections/159/view)                 |
+| Housing And Development Board Resale Price Index (1Q2009 = 100) (HDBRPI) | <https://tablebuilder.singstat.gov.sg/table/TS/M212161>                                                                      |
+| Expenditure On Gross Domestic Product Deflators (2015 = 100) (EOGDPD)    | [[https://tablebuilder.singstat.gov.sg/table/TS/M015111]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M015111) |
+| Average Monthly Nominal Earnings Per Employee (AMNE)                     | [[https://tablebuilder.singstat.gov.sg/table/TS/M182931]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M182931) |
 
 |     |
 |-----|
