@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Group Project/Proposal.html",
+    "href": "Group Project/Proposal.html",
+    "title": "Proposal",
+    "section": "",
+    "text": "In recent years, Singapore has become one of the top choices for many Asian overseas workers and international students after the pandemic, an increasing number of people have been moving to Singapore. Moreover, frequent relocations among foreign workers and students, coupled with a market saturated with intermediaries whose pricing is not transparent, have made finding satisfactory accommodation at a reasonable price an inevitable challenge for many international students and foreign workers"
+  },
+  {
+    "objectID": "Group Project/Proposal.html#the-display-of-the-past-present-and-future",
+    "href": "Group Project/Proposal.html#the-display-of-the-past-present-and-future",
+    "title": "Proposal",
+    "section": "4.1 The display of the past, present and future:",
+    "text": "4.1 The display of the past, present and future:\nPAST:\nFor the rent price data, almost from 2021, we want to know what happened in the past year. By using the interactive visualisation, we want to see the trend during and after the pandemic period. We also divide into 1 room, 2 rooms, 3 rooms, 4 rooms, 5 rooms in different area such as ANG MO KIO.\nPREESENT:\nThe present price is the most important part. We will use different kinds of charts to display the price by different rooms in different area.\nFUTURE:\nWe will use 2 methods to predict the price in the future. One is the regression to mean, by using CI 95%, this will help us to see the trend in the future. The other is ARIMA model, this model can predict the recent price."
+  },
+  {
+    "objectID": "Group Project/Proposal.html#visualization-interactive",
+    "href": "Group Project/Proposal.html#visualization-interactive",
+    "title": "Proposal",
+    "section": "4.2 Visualization Interactive：",
+    "text": "4.2 Visualization Interactive：\n1. Line chart: show trends and changes between data points through the time\n1&gt; Rent price trend  \n2&gt; Population & Economic Data (6 other data)\n2. Cycle Plots：show a day-of-the-week or a month-of-the-year effect by displaying a separate line for each week or month\n1&gt; Rent price in different month\n3. Bar chart: compare the quantitative relationships between different categories\n1&gt; Rent price in different area\n4. Box and Points plot：display the distribution of a dataset, particularly the median, quartiles, and outliers\n1&gt; Raw data in rent price (outliers)\n5. Points and violin plot:\n1&gt; One way ANOVA test\n6. Standard error bars plot\n1&gt; Rent price in Singapore (total)\n7. Arallel Plot: visualize multidimensional datasets on a two-dimensional plane\n1&gt; Population & Economic Data\n8. Tree map: display hierarchical data structures within a limited space, utilizing the size and color of rectangles to represent dimensions of the data\n1&gt; Present rent price in different area\n9. Mapping SG\n1&gt; Rent price present  and future in SG"
+  },
+  {
+    "objectID": "Group Project/Proposal.html#mathematics-function",
+    "href": "Group Project/Proposal.html#mathematics-function",
+    "title": "Proposal",
+    "section": "4.3 Mathematics  Function:",
+    "text": "4.3 Mathematics  Function:\n1.Linear Regression model\nRent price= β0​ + β1(IOP) + β2(RHH) + β3(NARR) + β4(HDBRPI) + β5(EOGDPD) + β6(AMNE) +ϵ\n1&gt; Regression Coefficients\n2&gt; Using R2 and adject R2\n3&gt; T-test\n4&gt; F-test\nFind out the most suitable R2 and model.\n2.ARIMA model\nARIMA Model (AutoRegressive Integrated Moving Average Model) to predict the house rent price."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "VAA-Group_Project-16",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  }
+]

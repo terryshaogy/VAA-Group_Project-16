@@ -1,0 +1,160 @@
+---
+title: "Proposal"
+author: "Xu Lin & Shao Guyue"
+---
+
+# **1.0 Background**
+
+In recent years, Singapore has become one of the top choices for many Asian overseas workers and international students after the pandemic, an increasing number of people have been moving to Singapore. Moreover, frequent relocations among foreign workers and students, coupled with a market saturated with intermediaries whose pricing is not transparent, have made finding satisfactory accommodation at a reasonable price an inevitable challenge for many international students and foreign workers
+
+# 2.0 Motivation & Proposal
+
+In the past few years, as I personally experienced the process of moving four times, I am deeply aware of the problems existing in the rental market, especially the lack of market transparency and the lack of protection of tenants' rights and interests. These experiences have led me to think about how we can fundamentally improve the rental market and provide a fairer and more transparent environment for tenants.
+
+# **3.0 The Data**
+
+1.  [**Renting Out of Flats (ROF)2023:**](https://beta.data.gov.sg/collections/166/view)
+
+    *This rental data is based on the declaration by the flat owner. HDB does not verify the accuracy of the data. Also this data includes room rent and house rent. In this essay, we only analysis the house rent. (for room rent, the data is not enough.)*
+
+2.  [**Indicators On Population(IOP)** :](https://tablebuilder.singstat.gov.sg/table/TS/M810001)
+
+    *This data include: Total Population, Resident Population, Singapore Citizen Population, Permanent Resident Population, Non-Resident Population, Total Population Growth. From this data we want to find out changes in population size.*
+
+3.  [**Resident Households By Household Size (RHH)** :](https://tablebuilder.singstat.gov.sg/table/TS/M810371)
+
+    *This data helps us to know how many residents own a house. These person who do not need to rent a house. We will use in the ANOVA test.*
+
+4.  [**Number of Applications Registered for Resale and Rental Flats (NARR)** :](https://beta.data.gov.sg/collections/159/view)
+
+    *This data helps us to know how many HDB house supply in the open market.*
+
+5.  [**Housing And Development Board Resale Price Index (1Q2009 = 100) (HDBRPI)**](https://tablebuilder.singstat.gov.sg/table/TS/M212161)
+
+    *The index is based on quarterly average resale price by date of registration. This data we will use in LM model .*
+
+6.  [**Expenditure On Gross Domestic Product Deflators (2015 = 100) (EOGDPD)** :](https://tablebuilder.singstat.gov.sg/table/TS/M015111)
+
+    *Aggregate value of the goods and services produced in the economic territory of Singapore. We will use this data in ANOVA test.*
+
+7.  [**Average Monthly Nominal Earnings Per Employee (AMNE)** :](https://tablebuilder.singstat.gov.sg/table/TS/M182931)
+
+    *Average (mean) monthly earnings refer to all remuneration received before deduction of the employee Central Provident Fund (CPF) contributions and personal income tax. It comprises basic wages, overtime pay, commissions, allowances and bonuses but exclude employer CPF contributions. This data will be used in ANOVA test.*
+
+![](figure/data wrangling.png){fig-align="center" width="683"}
+
+**Data wrangling：**
+
+*Figure 1: Data wrangling*
+
+Renting Out of Flats, the data include the room rent price and house rent price. we will use the median price to delete the low 25% price make the data more accuracy. we will use box and point to watch the data, mostly we will use the median price group by the area and room, delete the 25% lower rent price.
+
+For the other data, we will use them to compute the correlation with renting price by ANOVA test. We will also use the turkey test to build the most relevant model.
+
+#### 
+
+# 4.0 Methodology：
+
+## 4.1 The display of the past, present and future:
+
+***PAST:***
+
+For the rent price data, almost from 2021, we want to know what happened in the past year. By using the interactive visualisation, we want to see the trend during and after the pandemic period. We also divide into 1 room, 2 rooms, 3 rooms, 4 rooms, 5 rooms in different area such as ANG MO KIO.
+
+***PREESENT:***
+
+The present price is the most important part. We will use different kinds of charts to display the price by different rooms in different area.
+
+***FUTURE:***
+
+We will use 2 methods to predict the price in the future. One is the regression to mean, by using CI 95%, this will help us to see the trend in the future. The other is ARIMA model, this model can predict the recent price.
+
+## 4.2 Visualization Interactive：
+
+[**1. Line chart: show trends and changes between data points through the time**]{.underline}
+
+1\> Rent price trend  
+
+2\> Population & Economic Data (6 other data)
+
+[**2. Cycle Plots：show a day-of-the-week or a month-of-the-year effect by displaying a separate line for each week or month**]{.underline}
+
+1\> Rent price in different month
+
+[**3. Bar chart: compare the quantitative relationships between different categories**]{.underline}
+
+1\> Rent price in different area
+
+[**4. Box and Points plot：display the distribution of a dataset, particularly the median, quartiles, and outliers**]{.underline}
+
+1\> Raw data in rent price (outliers)
+
+[**5. Points and violin plot:**]{.underline}
+
+1\> One way ANOVA test
+
+[**6. Standard error bars plot**]{.underline}
+
+1\> Rent price in Singapore (total)
+
+[**7. Arallel Plot: visualize multidimensional datasets on a two-dimensional plane**]{.underline}
+
+1\> Population & Economic Data
+
+[**8. Tree map: display hierarchical data structures within a limited space, utilizing the size and color of rectangles to represent dimensions of the data**]{.underline}
+
+1\> Present rent price in different area
+
+[**9. Mapping SG**]{.underline}
+
+1\> Rent price present  and future in SG
+
+## **4.3 Mathematics  Function:**
+
+**1.Linear Regression model**
+
+Rent price= β0​ + β1(IOP) + β2(RHH) + β3(NARR) + β4(HDBRPI) + β5(EOGDPD) + β6(AMNE) +ϵ
+
+1\> Regression Coefficients
+
+2\> Using R2 and adject R2
+
+3\> T-test
+
+4\> F-test
+
+Find out the most suitable R2 and model.
+
+**2.ARIMA model**
+
+ARIMA Model (AutoRegressive Integrated Moving Average Model) to predict the house rent price.
+
+# **5.0 Conclusion**
+
+By applying qualitative and quantitative methods to in-depth market observations, and using cross-validation techniques to check the consistency and reliability of forecast results, we can increase the transparency of the rental market. This approach not only provides a reasonable price range in the current rental market (including all types of rooms), but also helps each person to find the best living option for them based on their unique needs and circumstances. By doing so, we are able to better understand market dynamics, identify price trends, and ensure renters are fully informed when making decisions. In addition, this increased transparency will also help promote fair competition in the market, prevent price manipulation, and provide a more just and efficient market environment for renters. Ultimately, this will lead to a healthier and more active rental market in which renters are able to rent satisfactory homes at reasonable prices, while landlords are able to get a fair return on their properties.
+
+# **6.0 Limitation:**
+
+1\. The rental data comes from the landlord, so it may not be timely. The time is also from 2021, and the time is short
+
+2, considering that our data is pandemic period, may not be completely correct
+
+3\. As part of prediction, the model is limited in use and is not cross-verified
+
+# 7.0 Reference & Data Sourse
+
+「1」Robbins, N. B. (2008, January). Introduction to Cycle Plots. Visual Business Intelligence Newsletter.
+
+| Data                                                                      | Sourse                                                                                                                       |
+|---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| Renting Out of Flats (ROF)2023                                            | <https://beta.data.gov.sg/collections/166/view>                                                                              |
+| Indicators On Population(IOP)                                             | <https://tablebuilder.singstat.gov.sg/table/TS/M810001>                                                                      |
+| Resident Households By Household Size (RHH)                               | [[https://tablebuilder.singstat.gov.sg/table/TS/M810371]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M810371) |
+| Number of Applications Registered for Resale and Rental Flats (NARR)      | [[https://beta.data.gov.sg/collections/159/view]{.underline}](https://beta.data.gov.sg/collections/159/view)                 |
+| Housing And Development Board Resale Price Index (1Q2009 = 100) (HDBRPI)  | <https://tablebuilder.singstat.gov.sg/table/TS/M212161>                                                                      |
+| Expenditure On Gross Domestic Product Deflators (2015 = 100) (EOGDPD)     | [[https://tablebuilder.singstat.gov.sg/table/TS/M015111]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M015111) |
+| Average Monthly Nominal Earnings Per Employee (AMNE)                      | [[https://tablebuilder.singstat.gov.sg/table/TS/M182931]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M182931) |
+
+|     |
+|-----|
+|     |

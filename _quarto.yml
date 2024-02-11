@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Singapore's rental market"
+  navbar:
+    left:
+    - text: "Proposal"
+      href: "Group Project/Proposal.html"
+
+          
+    right:
+      - href: index.qmd
+        text: home
+      - about.qmd
+        
+     
+format:
+  html:
+    theme: journal
+    css: styles.css
+    toc: true
+
+editor: visual
