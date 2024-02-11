@@ -54,7 +54,7 @@ The purpose of this paper is to provide a transparent and reliable reference of 
 
 **Data wrangling：**
 
-![](figure/data%20wrangling.png){fig-align="center" width="683"}
+![](images/picture.jpg)
 
 *Figure 1: Data wrangling*
 
