@@ -134,7 +134,7 @@ Find out the most suitable R2 and model.
 
 **2.ARIMA model**
 
-ARIMA Model (AutoRegressive Integrated Moving Average Model) to predict the house rent price.
+ARIMA Model (Auto-regressive Integrated Moving Average Model) to predict the house rent price.
 
 # **6.0 Conclusion**
 

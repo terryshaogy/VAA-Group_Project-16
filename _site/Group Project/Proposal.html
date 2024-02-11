@@ -181,8 +181,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="the-data-preparation" class="level1">
 <h1><strong>4.0 The Data Preparation</strong></h1>
 <ol type="1">
-<li><p><a href="https://beta.data.gov.sg/collections/166/view"><strong>Renting Out of Flats (ROF)2023:</strong></a></p>
-<p><em>This&nbsp;rental data is based on the declaration by the flat owner. HDB does not verify the accuracy of the data. Also this data includes room rent and house rent. In this essay, we only analysis the house rent. (for room rent, the data is not enough.)</em></p></li>
+<li><p><a href="https://app.netlify.com/sites/vaa-groupproject-g16/overview"><strong>Residential Rental:</strong></a></p>
+<p><em>This&nbsp;rental data is based on the Government platform and it includes house monthly rent and the No of bedroom form almost Non-landed Properties from 2019 to 2023 . In this essay, we only analysis the house rent.</em></p></li>
 <li><p><a href="https://tablebuilder.singstat.gov.sg/table/TS/M810001"><strong>Indicators On Population(IOP)</strong> :</a></p>
 <p><em>This data include: Total Population, Resident Population, Singapore Citizen Population, Permanent Resident Population, Non-Resident Population, Total Population Growth. From this data we want to find out changes in population size.</em></p></li>
 <li><p><a href="https://tablebuilder.singstat.gov.sg/table/TS/M810371"><strong>Resident Households By Household Size (RHH)</strong> :</a></p>
@@ -203,8 +203,8 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p><em>Figure 1: Data wrangling</em></p>
-<p>Renting Out of Flats, the data includes the room rent price and house rent price. we will use the median price to delete the low 25% price make the data more accuracy. we will use box and point to interpret the data, mostly we will use the median price group by the area and room, delete the 25% lower rent price.</p>
-<p>For the other data, we will use them to compute the correlation with renting price by ANOVA test. We will also use the turkey test to build the most relevant model.</p>
+<p>Renting Out of Flats, the data includes the room rent price and house rent price. In addition, we will use box and point to interpret the data, mostly we will use the median price group by the area and room.</p>
+<p>For the other data, we will use them to compute the correlation with renting price by LM Model. We will also use the turkey test to build the most relevant model.</p>
 <section id="section" class="level4">
 <h4 class="anchored" data-anchor-id="section"></h4>
 </section>
@@ -214,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="the-display-of-the-past-present-and-future" class="level3">
 <h3 class="anchored" data-anchor-id="the-display-of-the-past-present-and-future">5.1 The display of the past, present and future:</h3>
 <p><strong><em>PAST:</em></strong></p>
-<p>For the rent price data, almost from 2021, we want to know what happened in the past year. By using the interactive visualisation, we want to see the trend during and after the pandemic period. We also divide into 1 room, 2 rooms, 3 rooms, 4 rooms, 5 rooms in different area such as ANG MO KIO.</p>
+<p>For the rent price data, from 2019 to 2023, we want to understand what happened in the past year. By using the interactive visualisation, we want to see the trend during and after the pandemic period. We also divide into 1 room, 2 rooms, 3 rooms, 4 rooms, 5 rooms in different area such as ANG MO KIO.</p>
 <p><strong><em>PREESENT:</em></strong></p>
 <p>The present price&nbsp;is&nbsp;the most important part. We will use different kinds of charts to display the price by different rooms in different area.</p>
 <p><strong><em>FUTURE:</em></strong></p>
@@ -275,8 +275,8 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Renting Out of Flats (ROF)2023</td>
-<td><a href="https://beta.data.gov.sg/collections/166/view" class="uri">https://beta.data.gov.sg/collections/166/view</a></td>
+<td>Residential Rental</td>
+<td><a href="https://www.ura.gov.sg/property-market-information/pmiResidentialRentalSearch" class="uri">https://www.ura.gov.sg/property-market-information/pmiResidentialRentalSearch</a></td>
 </tr>
 <tr class="even">
 <td>Indicators On Population(IOP)</td>
