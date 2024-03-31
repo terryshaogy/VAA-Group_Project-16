@@ -1,11 +1,18 @@
 ---
-title: "VAA-Group_Project-16"
+title: "HDB Rental Price in Singapore Analysis"
+author: Xu Lin Shao Guyue
+date-modified: "last-modified"
+execute: 
+  eval: true
+  echo: true
+  warning: false
+editor: visual
 ---
 
-This is a Quarto website.
+![](images/Confidential InfoWEB_Mobile.jpg){width="663"}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Welcome to our project:
 
-```{r}
-1 + 1
-```
+## **There are two authors on this subject: Xu Lin & Shao Guyue.**
+
+## **It has four parts: Proposal, Shiny-app , Poster and User-guide.**

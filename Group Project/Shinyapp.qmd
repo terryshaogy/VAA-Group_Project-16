@@ -1,6 +1,12 @@
 ---
-title: "Shinyapp"
-author: "guyue"
+title: "Shiny App"
+author: Xu Lin Shao Guyue
+date-modified: "last-modified"
+execute: 
+  eval: true
+  echo: true
+  warning: false
+editor: visual
 ---
 
-Shiny APP URL: <https://guyueshao.shinyapps.io/Groupproject/>
+Shing App URL: <https://guyueshao.shinyapps.io/GroupProjectfinal/>

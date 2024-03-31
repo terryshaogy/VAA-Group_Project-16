@@ -1,17 +1,24 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "VAA-Group_Project-16",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "objectID": "index.html#there-are-two-authors-on-this-subject-xu-lin-shao-guyue.",
+    "href": "index.html#there-are-two-authors-on-this-subject-xu-lin-shao-guyue.",
+    "title": "HDB Rental Price in Singapore Analysis",
+    "section": "There are two authors on this subject: Xu Lin & Shao Guyue.",
+    "text": "There are two authors on this subject: Xu Lin & Shao Guyue."
+  },
+  {
+    "objectID": "index.html#it-has-four-parts-proposal-shiny-app-poster-and-user-guide.",
+    "href": "index.html#it-has-four-parts-proposal-shiny-app-poster-and-user-guide.",
+    "title": "HDB Rental Price in Singapore Analysis",
+    "section": "It has four parts: Proposal, Shiny-app , Poster and User-guide.",
+    "text": "It has four parts: Proposal, Shiny-app , Poster and User-guide."
   },
   {
     "objectID": "Group Project/Shinyapp.html",
     "href": "Group Project/Shinyapp.html",
-    "title": "Shinyapp",
+    "title": "Shiny App",
     "section": "",
-    "text": "Shiny APP URL: https://guyueshao.shinyapps.io/Groupproject/"
+    "text": "Shing App URL: https://guyueshao.shinyapps.io/GroupProjectfinal/"
   },
   {
     "objectID": "about.html",

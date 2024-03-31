@@ -1,4 +1,12 @@
 ---
 title: "Poster"
-author: "guyue"
+author: Xu Lin Shao Guyue
+date-modified: "last-modified"
+execute: 
+  eval: true
+  echo: true
+  warning: false
+editor: visual
 ---
+
+![](images/ISSS602_AY2022-23Aug_G1_Group6_Poster.jpg)
