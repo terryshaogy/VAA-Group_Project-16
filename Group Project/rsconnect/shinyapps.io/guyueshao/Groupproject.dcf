@@ -1,0 +1,12 @@
+name: Groupproject
+title: Groupproject
+username: guyueshao
+account: guyueshao
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11626459
+bundleId: 8437234
+url: https://guyueshao.shinyapps.io/Groupproject/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

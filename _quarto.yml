@@ -7,6 +7,15 @@ website:
     left:
     - text: "Proposal"
       href: "Group Project/Proposal.html"
+    
+    - text: "Poster"
+      href: "Group Project/poster.html"
+
+    - text: "Shiny App"
+      href: "Group Project/Shinyapp"
+
+    - text: "User-Guide"
+      href: "Group Project/userguide"
 
           
     right:
