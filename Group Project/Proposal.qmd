@@ -14,7 +14,7 @@ editor: visual
 
 In the wake of the pandemic, Singapore has rapidly emerged as a popular tourist destination and fintech hub, attracting many foreign students and staff. For them, renting became the first challenge they faced after arriving in Singapore. Unlike other countries, the rental market in Singapore is dominated by landlords and agents, who usually give priority to the interests of landlords and strive to obtain more profits for landlords. Although the Singapore government has achieved relative transparency in housing policy, new arrivals may still rely too much on the information of landlords and agents and lose their judgment of reasonable rent because they are not familiar with the unique rental system and regulations in Singapore. In addition, most people do not know how to use the resources and platforms provided by the government to obtain information.
 
-# 2.0 Motivation 
+# 2.0 Motivation
 
 As a foreign student, I went through four moves in just one year, each for different reasons. In a competitive rental market like Singapore, finding a fair and reasonable price can be a challenge for landlords and an even more daunting task for tenants. Especially in the face of multiple potential tenants competing for the same property, how to ensure that you make an offer that is fair to both parties becomes a matter of careful consideration.
 
@@ -22,7 +22,7 @@ As a foreign student, I went through four moves in just one year, each for diffe
 
 The purpose of this paper is to provide a transparent and reliable reference of rental prices for consumers, especially foreign students or staff like me. By analyzing and sharing real-time market data, we hope to deeply explore the various factors affecting rent pricing, including geographical location, housing type, etc., to help tenants rent satisfactory houses at the most reasonable prices, and improve the transaction efficiency between landlords and tenants.
 
-# **4.0 The Data Preparation** 
+# **4.0 The Data Preparation**
 
 1.  [**Residential Rental:**](https://app.netlify.com/sites/vaa-groupproject-g16/overview)
 
@@ -153,7 +153,7 @@ By applying qualitative and quantitative methods to in-depth market observations
 「1」Robbins, N. B. (2008, January). Introduction to Cycle Plots. Visual Business Intelligence Newsletter.
 
 | Data                                                                     | Sourse                                                                                                                       |
-|---------------------------|---------------------------------------------|
+|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | Residential Rental                                                       | <https://www.ura.gov.sg/property-market-information/pmiResidentialRentalSearch>                                              |
 | Indicators On Population(IOP)                                            | <https://tablebuilder.singstat.gov.sg/table/TS/M810001>                                                                      |
 | Resident Households By Household Size (RHH)                              | [[https://tablebuilder.singstat.gov.sg/table/TS/M810371]{.underline}](https://tablebuilder.singstat.gov.sg/table/TS/M810371) |
